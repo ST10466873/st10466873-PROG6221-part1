@@ -4,12 +4,14 @@ using System.Text;
 
 namespace st10466873_PROG6221_part1
 {
-    class Program
+    public class Chatbot
     {
-        static void Main(string[] args)
+        private string userName;
+
+        public void Start()
         {
-            Chatbot bot = new Chatbot();
-            bot.Start();
+            PlayVoiceGreeting();
+            DisplayAsciiArt();
+            GreetUser();
+            ChatLoop();
         }
-    }
-}
