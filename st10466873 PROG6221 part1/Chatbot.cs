@@ -120,3 +120,17 @@ namespace st10466873_PROG6221_part1
                 }
             }
         }
+
+        private void PrintWithTypingEffect(string text, ConsoleColor color)
+        {
+            Console.ForegroundColor = color;
+            foreach (char c in text)
+            {
+                Console.Write(c);
+                Thread.Sleep(15);
+            }
+            Console.WriteLine();
+            Console.ResetColor();
+        }
+    }
+}
