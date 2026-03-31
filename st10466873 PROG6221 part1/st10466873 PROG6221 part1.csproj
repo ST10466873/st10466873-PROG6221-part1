@@ -8,4 +8,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="System.Runtime.WindowsRuntime" Version="4.7.0" />
+    <PackageReference Include="System.Windows.Extensions" Version="10.0.5" />
+  </ItemGroup>
+
 </Project>
