@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "nSub8crcJ6M=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lab_services_student\\source\\repos\\st10466873 PROG6221 part1\\st10466873 PROG6221 part1\\st10466873 PROG6221 poE.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lab_services_student\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\lab_services_student\\.nuget\\packages\\system.runtime.windowsruntime\\4.7.0\\system.runtime.windowsruntime.4.7.0.nupkg.sha512",
+    "C:\\Users\\lab_services_student\\.nuget\\packages\\system.windows.extensions\\10.0.5\\system.windows.extensions.10.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}
