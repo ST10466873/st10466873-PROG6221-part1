@@ -16,10 +16,7 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
-                <TextBlock Grid.Column="0" Text="  ╔═╗╦═╗╦╔╗╔╦═╗╦ ╦   ╔═╗╦ ╦╦═╗╦╔═╗╦╔═╗╦═╗╔═╗
-  ╚═╗╠╦╝║║║║╠╦╝╚╦╝───╚═╗║ ║╠╦╝║║ ║║║║╠╦╝║╣ 
-  ╚═╝╩╚═╩╝╚╝╩╚═ ╩    ╚═╝╚═╝╩╚═╩╚═╝╩╚╝╩╚═╚═╝"
-                           Foreground="#00E5FF" FontSize="10" FontFamily="Consolas" FontWeight="Bold" VerticalAlignment="Center"/>
+                <TextBlock Grid.Column="0" Foreground="#00E5FF" FontSize="10" FontFamily="Consolas" FontWeight="Bold" VerticalAlignment="Center" xml:space="preserve">  ╔═╗╦═╗╦╔╗╔╦═╗╦ ╦   ╔═╗╦ ╦╦═╗╦╔═╗╦╔═╗╦═╗╔═╗&#x0a;  ╚═╗╠╦╝║║║║╠╦╝╚╦╝───╚═╗║ ║╠╦╝║║ ║║║║╠╦╝║╣&#x0a;  ╚═╝╩╚═╩╝╚╝╩╚═ ╩    ╚═╝╚═╝╩╚═╩╚═╝╩╚╝╩╚═╚═╝</TextBlock>
                 <TextBlock Grid.Column="1" Text="CYBER-SHIELD ASSISTANT" Foreground="#00E5FF" FontSize="14"
                            FontWeight="Bold" Margin="8,0,0,0" VerticalAlignment="Center"/>
                 <TextBlock Grid.Column="2" x:Name="StatusBar" Text="Connected | MySQL Active"
