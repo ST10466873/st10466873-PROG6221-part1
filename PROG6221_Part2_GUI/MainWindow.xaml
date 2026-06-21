@@ -14,11 +14,16 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
-                <TextBlock Grid.Column="0" Text="[ === CYBER-SHIELD ASSISTANT === ]"
-                           Foreground="#00E5FF" FontSize="14" FontWeight="Bold" VerticalAlignment="Center"/>
-                <TextBlock Grid.Column="1" x:Name="StatusBar" Text="Connected | MySQL Active"
-                           Foreground="#4CAF50" FontSize="11" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                <TextBlock Grid.Column="0" Text="  ╔═╗╦═╗╦╔╗╔╦═╗╦ ╦   ╔═╗╦ ╦╦═╗╦╔═╗╦╔═╗╦═╗╔═╗
+  ╚═╗╠╦╝║║║║╠╦╝╚╦╝───╚═╗║ ║╠╦╝║║ ║║║║╠╦╝║╣ 
+  ╚═╝╩╚═╩╝╚╝╩╚═ ╩    ╚═╝╚═╝╩╚═╩╚═╝╩╚╝╩╚═╚═╝"
+                           Foreground="#00E5FF" FontSize="10" FontFamily="Consolas" FontWeight="Bold" VerticalAlignment="Center"/>
+                <TextBlock Grid.Column="1" Text="CYBER-SHIELD ASSISTANT" Foreground="#00E5FF" FontSize="14"
+                           FontWeight="Bold" Margin="8,0,0,0" VerticalAlignment="Center"/>
+                <TextBlock Grid.Column="2" x:Name="StatusBar" Text="Connected | MySQL Active"
+                           Foreground="#4CAF50" FontSize="11" VerticalAlignment="Center"/>
             </Grid>
         </Border>
 
@@ -105,6 +110,9 @@
                                      BorderBrush="#555" BorderThickness="1" Padding="6" FontSize="12" Margin="0,5,5,0"/>
                             <DatePicker Grid.Row="2" Grid.Column="1" x:Name="TaskReminderPicker" Background="#2C2C34" Foreground="White"
                                         BorderBrush="#555" Margin="0,5,0,0"/>
+                            <Button Grid.Row="3" Grid.ColumnSpan="2" Content="ADD TASK" Background="#00E5FF"
+                                    Foreground="Black" FontWeight="Bold" FontSize="13" Padding="8,6" Margin="0,8,0,0"
+                                    Click="TaskAdd_Click"/>
                         </Grid>
                     </Border>
 

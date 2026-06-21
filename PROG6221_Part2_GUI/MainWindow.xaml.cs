@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Media;
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Threading;
 using CybersecurityChatbot;
 
 namespace PROG6221_Part2_GUI
@@ -19,6 +21,7 @@ namespace PROG6221_Part2_GUI
         private string _currentQuestionKey = "";
         private int _currentQuestionIndex = 0;
         private List<string> _questionKeys = new List<string>();
+        private DispatcherTimer _reminderTimer = null!;
 
         public MainWindow()
         {
@@ -28,13 +31,16 @@ namespace PROG6221_Part2_GUI
 
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
+            PlayVoiceGreeting();
+            StartReminderTimer();
             try
             {
                 _nlp.AddLog("Application started");
                 _nlp.AddLog("Database connection established");
                 AppendChat("System", "==================================================");
-                AppendChat("System", "  CYBER-SHIELD ASSISTANT v1.0");
+                AppendChat("System", "  CYBER-SHIELD ASSISTANT v1.2");
                 AppendChat("System", "  Database: MySQL 8.0 | Status: Connected");
+                AppendChat("System", "  Voice module: Loaded");
                 AppendChat("System", "==================================================");
                 AppendChat("Bot", "Hello! I'm your cybersecurity awareness assistant. What is your name?");
                 UpdateStatusBar("Connected | MySQL Active", "#4CAF50");
@@ -45,6 +51,51 @@ namespace PROG6221_Part2_GUI
                 AppendChat("System", $"Warning: Database connection failed - {ex.Message}");
                 AppendChat("Bot", "Hello! I'm your cybersecurity awareness assistant. What is your name?");
             }
+        }
+
+        private void PlayVoiceGreeting()
+        {
+            try
+            {
+                if (System.IO.File.Exists("greeting.wav"))
+                    new SoundPlayer("greeting.wav").Play();
+                else
+                    SystemSounds.Beep.Play();
+            }
+            catch
+            {
+                SystemSounds.Beep.Play();
+            }
+        }
+
+        private void StartReminderTimer()
+        {
+            _reminderTimer = new DispatcherTimer();
+            _reminderTimer.Interval = TimeSpan.FromSeconds(30);
+            _reminderTimer.Tick += ReminderTimer_Tick;
+            _reminderTimer.Start();
+        }
+
+        private void ReminderTimer_Tick(object? sender, EventArgs e)
+        {
+            try
+            {
+                var tasks = _db.ReadActiveTasks();
+                foreach (var task in tasks)
+                {
+                    if (task.Contains("Due:"))
+                    {
+                        string today = DateTime.Now.ToShortDateString();
+                        if (task.Contains($"Due: {today}"))
+                        {
+                            _nlp.AddLog($"Reminder: Task due today - {task}");
+                            if (_session.UserName != "Guest")
+                                AppendChat("System", $" REMINDER: Task due today - {task}");
+                        }
+                    }
+                }
+            }
+            catch { }
         }
 
         private void UpdateStatusBar(string text, string color)
@@ -169,6 +220,33 @@ namespace PROG6221_Part2_GUI
         }
 
         private void TaskRefresh_Click(object sender, RoutedEventArgs e) => LoadTasks();
+
+        private void TaskAdd_Click(object sender, RoutedEventArgs e)
+        {
+            string title = TaskInput.Text.Trim();
+            string desc = TaskDescInput.Text.Trim();
+            DateTime? reminder = TaskReminderPicker.SelectedDate;
+
+            if (string.IsNullOrWhiteSpace(title))
+            {
+                MessageBox.Show("Please enter a task title.", "Input Required", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            bool success = _db.AddTask(title, desc, reminder);
+            if (success)
+            {
+                _nlp.AddLog($"Task added: '{title}'");
+                TaskInput.Clear();
+                TaskDescInput.Clear();
+                TaskReminderPicker.SelectedDate = null;
+                LoadTasks();
+            }
+            else
+            {
+                MessageBox.Show("Failed to add task. Check database connection.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
 
         private void TaskComplete_Click(object sender, RoutedEventArgs e)
         {
