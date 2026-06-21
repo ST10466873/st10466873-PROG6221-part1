@@ -1,6 +1,9 @@
 # Cyber-Shield Assistant
 
-A **Cybersecurity Awareness Chatbot** built in C# (.NET 10) with a WPF GUI interface. This application educates users on cybersecurity topics through interactive conversation, task management, quizzes, and activity tracking.
+A **Cybersecurity Awareness Chatbot** built in C# (.NET 10) with a WPF GUI interface. This application educates South African citizens on cybersecurity topics through interactive conversation, task management, quizzes, and activity tracking.
+
+## Project Overview
+This project is a functional, WPF-based chatbot developed for South African citizens to improve cybersecurity literacy. It simulates real-life scenarios to educate users on password safety, phishing scams, and identifying digital threats. This repository contains the complete Portfolio of Evidence (POE) requirements.
 
 ## Features
 
@@ -55,7 +58,7 @@ dotnet run
 
 ## Usage Guide
 
-1. **Start the app** - The GUI launches with a dark-themed interface
+1. **Start the app** - The GUI launches with a dark-themed interface and ASCII art
 2. **Enter your name** - The bot remembers you throughout the session
 3. **Chat** - Type cybersecurity questions about passwords, phishing, malware, etc.
 4. **Tasks** - Switch to the Tasks tab to add, complete, or delete tasks
@@ -84,11 +87,40 @@ dotnet run
 └── st10466873 PROG6221 poE.slnx  # Solution file linking both projects
 ```
 
+## Version Control & CI
+
+- **Releases/Tags:**
+  - `v1.0.0` - Initial release: Console chatbot with ASCII art, voice greeting, keyword responses, and WPF GUI framework
+  - `v1.1.0` - Database integration: MySQL task management with full CRUD operations
+  - `v1.2.0` - Full feature release: GUI overhaul with Quiz, Activity Log, expanded chatbot
+- **CI Implementation:** A GitHub Actions workflow is configured in the `.github/workflows` directory to ensure build stability.
+
+## Key Technical Features
+
+- **Sentiment Detection:** Uses Delegates to detect user emotions and adjust response tone
+- **Memory & Recall:** Remembers user's name, favorite topics, and conversation history
+- **Keyword Recognition:** Responds specifically to 10 cybersecurity topics
+- **Randomized Tips:** Uses Dictionaries and Lists to ensure varied, engaging interactions
+- **Database Integration:** MySQL with full CRUD for task persistence
+- **GUI Design:** Tabbed WPF interface with dark theme and professional styling
+
+## Screenshots
+
+### Part 1 (Console)
+<img width="1920" height="1080" alt="Screenshot 2026-03-31 232744" src="https://github.com/user-attachments/assets/dc93ea3e-2dfc-45fa-812b-0820596a9e41" />
+<img width="1920" height="1080" alt="Screenshot 2026-03-31 224033" src="https://github.com/user-attachments/assets/d3e29cb2-47a2-4fa7-a1dd-f303e705127a" />
+<img width="1920" height="1080" alt="Screenshot (5)" src="https://github.com/user-attachments/assets/131a0e87-19e4-44e8-9203-7603eeab612d" />
+
 ## GitHub & Video
 
-- **GitHub Repository:** https://github.com/st10466873/CyberShield-Assistant
+- **GitHub Repository:** https://github.com/ST10466873/st10466873-PROG6221-part1
 - **YouTube Presentation:** [Video Link Here]
+
+## References
+
+- OpenAI. 2026. ChatGPT. [Generative AI]. Available at: https://chatgpt.com [Accessed 11 May 2026].
+- Patorjk.com. 2026. TAAG - Text to ASCII Art Generator. [Online]. Available at: https://patorjk.com/software/taag/ [Accessed 11 May 2026].
 
 ## License
 
-Educational project for PROG6221.
+Educational project for PROG6221 - ST10466873.

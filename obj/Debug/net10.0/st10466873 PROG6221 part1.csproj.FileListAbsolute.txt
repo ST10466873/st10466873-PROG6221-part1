@@ -1,0 +1,21 @@
+C:\Users\lab_services_student\source\repos\st10466873 PROG6221 part1\st10466873 PROG6221 part1\obj\Debug\net10.0\st10466873 PROG6221 part1.csproj.AssemblyReference.cache
+C:\Users\lab_services_student\source\repos\st10466873 PROG6221 part1\st10466873 PROG6221 part1\obj\Debug\net10.0\st10466873 PROG6221 part1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lab_services_student\source\repos\st10466873 PROG6221 part1\st10466873 PROG6221 part1\obj\Debug\net10.0\st10466873 PROG6221 part1.AssemblyInfoInputs.cache
+C:\Users\lab_services_student\source\repos\st10466873 PROG6221 part1\st10466873 PROG6221 part1\obj\Debug\net10.0\st10466873 PROG6221 part1.AssemblyInfo.cs
+C:\Users\lab_services_student\source\repos\st10466873 PROG6221 part1\st10466873 PROG6221 part1\obj\Debug\net10.0\st10466873 PROG6221 part1.csproj.CoreCompileInputs.cache
+C:\Users\lab_services_student\source\repos\st10466873 PROG6221 part1\st10466873 PROG6221 part1\obj\Debug\net10.0\st10466873 PROG6221 part1.sourcelink.json
+C:\Users\lab_services_student\source\repos\st10466873 PROG6221 part1\st10466873 PROG6221 part1\bin\Debug\net10.0\st10466873 PROG6221 part1.exe
+C:\Users\lab_services_student\source\repos\st10466873 PROG6221 part1\st10466873 PROG6221 part1\bin\Debug\net10.0\st10466873 PROG6221 part1.deps.json
+C:\Users\lab_services_student\source\repos\st10466873 PROG6221 part1\st10466873 PROG6221 part1\bin\Debug\net10.0\st10466873 PROG6221 part1.runtimeconfig.json
+C:\Users\lab_services_student\source\repos\st10466873 PROG6221 part1\st10466873 PROG6221 part1\bin\Debug\net10.0\st10466873 PROG6221 part1.dll
+C:\Users\lab_services_student\source\repos\st10466873 PROG6221 part1\st10466873 PROG6221 part1\bin\Debug\net10.0\st10466873 PROG6221 part1.pdb
+C:\Users\lab_services_student\source\repos\st10466873 PROG6221 part1\st10466873 PROG6221 part1\bin\Debug\net10.0\System.Runtime.WindowsRuntime.dll
+C:\Users\lab_services_student\source\repos\st10466873 PROG6221 part1\st10466873 PROG6221 part1\bin\Debug\net10.0\System.Windows.Extensions.dll
+C:\Users\lab_services_student\source\repos\st10466873 PROG6221 part1\st10466873 PROG6221 part1\bin\Debug\net10.0\runtimes\win\lib\netcoreapp3.0\System.Runtime.WindowsRuntime.dll
+C:\Users\lab_services_student\source\repos\st10466873 PROG6221 part1\st10466873 PROG6221 part1\bin\Debug\net10.0\runtimes\win\lib\net10.0\System.Windows.Extensions.dll
+C:\Users\lab_services_student\source\repos\st10466873 PROG6221 part1\st10466873 PROG6221 part1\obj\Debug\net10.0\st104668.5FA3485B.Up2Date
+C:\Users\lab_services_student\source\repos\st10466873 PROG6221 part1\st10466873 PROG6221 part1\obj\Debug\net10.0\st10466873 PROG6221 part1.dll
+C:\Users\lab_services_student\source\repos\st10466873 PROG6221 part1\st10466873 PROG6221 part1\obj\Debug\net10.0\refint\st10466873 PROG6221 part1.dll
+C:\Users\lab_services_student\source\repos\st10466873 PROG6221 part1\st10466873 PROG6221 part1\obj\Debug\net10.0\st10466873 PROG6221 part1.pdb
+C:\Users\lab_services_student\source\repos\st10466873 PROG6221 part1\st10466873 PROG6221 part1\obj\Debug\net10.0\st10466873 PROG6221 part1.genruntimeconfig.cache
+C:\Users\lab_services_student\source\repos\st10466873 PROG6221 part1\st10466873 PROG6221 part1\obj\Debug\net10.0\ref\st10466873 PROG6221 part1.dll
