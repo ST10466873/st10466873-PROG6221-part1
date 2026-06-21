@@ -105,10 +105,15 @@ dotnet run
 - **Database Integration:** MySQL with full CRUD for task persistence
 - **GUI Design:** Tabbed WPF interface with dark theme and professional styling
 
-## GitHub & Video
+## GitHub 
 
 - **GitHub Repository:** https://github.com/ST10466873/st10466873-PROG6221-part1
-- **YouTube Presentation:** [Video Link Here]
+
+## Screenshots
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c7603976-8d72-4d70-a0e9-b4c706167cf4" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/dbe2800b-e69d-4af1-a80e-2cbc9f7289f3" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f6ff99f9-8881-4701-bc04-753ca7d60f7d" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d44e6fcb-1eeb-4dc7-b317-dad397298bf6" />
 
 ## References
 
