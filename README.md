@@ -75,7 +75,8 @@ dotnet run
 │   ├── DatabaseManager.cs        # MySQL CRUD operations
 │   ├── NLPChatbot.cs             # NLP simulation with activity logging
 │   ├── QuizManager.cs            # 11-question cybersecurity quiz engine
-│   └── UserSession.cs            # User state, memory, and sentiment tracking
+│   ├── UserSession.cs            # User state, memory, and sentiment tracking
+│   └── screenshots/              # Application screenshots
 ├── st10466873 PROG6221 part1/    # Console Application (Part 1)
 │   ├── Program.cs                # Entry point
 │   ├── Chatbot.cs                # Console chatbot with ASCII art & voice
@@ -105,6 +106,16 @@ dotnet run
 - **GUI Design:** Tabbed WPF interface with dark theme and professional styling
 
 ## Screenshots
+
+### GUI Application (All Tabs)
+
+| Chat Tab | Tasks Tab |
+|:---:|:---:|
+| ![Chat Tab](PROG6221_Part2_GUI/screenshots/screenshot_chat_tab.png) | ![Tasks Tab](PROG6221_Part2_GUI/screenshots/screenshot_tasks_tab.png) |
+
+| Quiz Tab | Activity Log Tab |
+|:---:|:---:|
+| ![Quiz Tab](PROG6221_Part2_GUI/screenshots/screenshot_quiz_tab.png) | ![Activity Log Tab](PROG6221_Part2_GUI/screenshots/screenshot_log_tab.png) |
 
 ### Part 1 (Console)
 <img width="1920" height="1080" alt="Screenshot 2026-03-31 232744" src="https://github.com/user-attachments/assets/dc93ea3e-2dfc-45fa-812b-0820596a9e41" />
