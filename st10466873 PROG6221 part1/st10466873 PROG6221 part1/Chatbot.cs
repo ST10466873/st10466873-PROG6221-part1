@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Text;
 using System.Media;
 
-namespace st10466873_PROG6221_poE
+namespace st10466873_PROG6221_part1
 {
     public class Chatbot
     {
-        private string userName = "";
+        private string userName;
 
         public void Start()
         {
@@ -53,7 +53,7 @@ namespace st10466873_PROG6221_poE
             PrintWithTypingEffect("--------------------------------------------------", ConsoleColor.DarkGray);
 
             Console.Write("\nTo get started, please enter your name: ");
-            userName = Console.ReadLine() ?? "";
+            userName = Console.ReadLine();
 
             if (string.IsNullOrWhiteSpace(userName))
             {
@@ -76,7 +76,7 @@ namespace st10466873_PROG6221_poE
                 Console.Write($"\n[{userName}]: ");
                 Console.ResetColor();
 
-                string input = (Console.ReadLine() ?? "").Trim().ToLower();
+                string input = Console.ReadLine()?.Trim().ToLower();
 
                 if (string.IsNullOrWhiteSpace(input))
                 {

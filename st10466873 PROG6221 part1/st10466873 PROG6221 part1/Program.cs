@@ -1,4 +1,4 @@
-﻿namespace st10466873_PROG6221_poE
+﻿namespace st10466873_PROG6221_part1
 {
     class Program
     {
