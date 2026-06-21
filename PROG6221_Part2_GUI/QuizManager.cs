@@ -41,7 +41,7 @@ namespace CybersecurityChatbot
         public string CheckAnswer(string question, string userAnswer)
         {
             var qData = Questions[question];
-            if (qData.Answer.Equals(userAnswer, System.StringComparison.OrdinalIgnoreCase))
+            if (qData.Answer.Substring(0, 1).Equals(userAnswer, System.StringComparison.OrdinalIgnoreCase))
             {
                 Score++;
                 return $"Correct! {qData.Explanation}";
